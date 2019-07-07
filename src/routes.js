@@ -3,6 +3,6 @@ import * as ProjectController from './controllers/ProjectController';
 
 const routes = new Router();
 
-routes.get('/', ProjectController.store);
+routes.post('/projects', ProjectController.store);
 
 module.exports = routes;
