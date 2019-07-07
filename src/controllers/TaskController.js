@@ -15,5 +15,5 @@ export default function store(req, res) {
 
   storage.save(projects);
 
-  return res.json(currentProject);
+  return res.status(200).json(currentProject);
 }
