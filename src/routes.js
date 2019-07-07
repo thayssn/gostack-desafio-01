@@ -7,5 +7,6 @@ routes.get('/projects', ProjectController.index);
 routes.post('/projects', ProjectController.store);
 routes.get('/projects/:id', ProjectController.show);
 routes.put('/projects/:id', ProjectController.update);
+routes.delete('/projects/:id', ProjectController.remove);
 
 module.exports = routes;
