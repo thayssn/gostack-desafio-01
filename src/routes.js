@@ -1,7 +1,7 @@
-import { Router } from "express";
+import { Router } from 'express';
 
 const routes = new Router();
 
-routes.get("/", (req, res) => res.send("Henlo!"));
+routes.get('/', (req, res) => res.send('Henlo!'));
 
 module.exports = routes;
