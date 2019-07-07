@@ -12,3 +12,7 @@ export function load() {
   const data = JSON.parse(fileBuffer);
   return data;
 }
+
+export function clear() {
+  save([]);
+}
