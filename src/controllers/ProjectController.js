@@ -22,6 +22,11 @@ export function store(req, res) {
   return res.status(201).json(newProject);
 }
 
+export function index(req, res) {
+  const projects = storage.load();
+  return res.json(projects);
+}
+
 export function show(req, res) {
   return res.json();
 }
