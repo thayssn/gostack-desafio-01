@@ -1,23 +1,67 @@
-# Boilerplate
+# GoStack - Desafio 01
 
-This is my boilerplate for new Express projects.
+Uma api para gerenciar projetos com tarefas.
 
-## Install
+
+## Instalação
 
 ```
 yarn
 ```
 
-## Customizing the project
-
-Configure the repository and eslint rules from scratch.
-
-```
-yarn cook
-```
-
-## Up and running
+## Servidor
 
 ```
 yarn start
+```
+
+## Como usar
+
+### Criar novos projetos
+```curl
+POST /projects
+```
+```json
+{
+	"id": "",
+	"title": "",
+	"tasks" : []
+}
+```
+
+### Listar todos os projetos
+```curl
+GET /projects
+```
+
+### Listar um projeto
+```curl
+GET /projects/id
+```
+
+### Atualizar um projeto
+```curl
+PUT /projects/id
+```
+```json
+{
+	"id": "",
+	"title": "",
+	"tasks" : []
+}
+```
+
+### Deletar um projeto
+```curl
+DELETE /projects/id
+```
+
+### Criar tasks para um projeto
+```curl
+POST /projects/id/tasks
+```
+```json
+{
+	"task": "",
+}
 ```
