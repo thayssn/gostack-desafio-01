@@ -5,5 +5,6 @@ const routes = new Router();
 
 routes.get('/projects', ProjectController.index);
 routes.post('/projects', ProjectController.store);
+routes.get('/projects/:id', ProjectController.show);
 
 module.exports = routes;
